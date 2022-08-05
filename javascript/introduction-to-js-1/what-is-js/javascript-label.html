@@ -2,6 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>JavaScript label example</title>
     <style>
       p {
@@ -29,8 +30,8 @@
       para.addEventListener('click', updateName);
 
       function updateName() {
-        let name = prompt('Enter a new name');
-        para.textContent = 'Player 1: ' + name;
+        const name = prompt('Enter a new name');
+        para.textContent = `Player 1: ${name}`;
       }
     </script>
   </body>

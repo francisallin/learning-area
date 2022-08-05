@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Editable canvas example</title>
     <style>
       html {
@@ -86,7 +87,7 @@ ctx.fillRect(10, 10, x, y);
     function drawCanvas() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       eval(textarea.value);
-      para.textContent = 'The rectangle is ' + x + 'px wide and ' + y + 'px high.';
+      para.textContent = `The rectangle is ${x}px wide and ${y}px high.`;
     }
 
     reset.addEventListener('click', function() {

@@ -16,7 +16,7 @@ The finished code should look something like this:
 let season = 'summer';
 let response;
 
-if(season === 'summer') {
+if (season === 'summer') {
   response = 'It\'s probably nice and warm where you are; enjoy the sun!';
 } else if(season === 'winter') {
   response = 'I hope you are not too cold. Put some warm clothes on!';
@@ -27,7 +27,7 @@ if(season === 'summer') {
 
 ## Task 2
 
-Task 2 tests some more complex conditionals, like not equal, less than, greater than, etc., along with a nested structure. 
+Task 2 tests some more complex conditionals, like not equal, less than, greater than, etc., along with a nested structure.
 
 You are given two variables containing an indicator of the answer machine being switched on or not (`true`/`false`), and a score. You are also given an uninitialized `response` variable.
 
@@ -37,7 +37,7 @@ Inside the `if` part, you need to nest an `if ... else if` structure that puts a
 
 * `score < 0 || score > 100` - "This is not possible, an error has occurred." This could also be done just by an `else` clause, as the scores between 0 and 100 are all covered by the other clauses. But it's nice to be exact.
 * `score >= 0 && score < 20` - "That was a terrible score — total fail!"
-* `score >= 20 && score < 40` - "You know some things, but it's a pretty bad score. Needs improvement."
+* `score >= 20 && score < 40` - "You know some things, but it\'s a pretty bad score. Needs improvement."
 * `score >= 40 && score < 70` — "You did a passable job, not bad!"
 * `score >= 70 && score < 90` — "That\'s a great score, you really know your stuff."
 * `score >= 90 && score <= 100` — "What an amazing score! Did you cheat? Are you for real?"
@@ -49,13 +49,13 @@ let response;
 let score = 75;
 let machineActive = false;
 
-if(machineActive) {
-  if(score < 0 || score > 100) {
+if (machineActive) {
+  if (score < 0 || score > 100) {
     response = 'This is not possible, an error has occurred.';
   } else if(score >= 0 && score < 20) {
     response = 'That was a terrible score — total fail!';
   } else if(score >= 20 && score < 40) {
-    response = 'You know some things, but it's a pretty bad score. Needs improvement.';
+    response = 'You know some things, but it\'s a pretty bad score. Needs improvement.';
   } else if(score >= 40 && score < 70) {
     response = 'You did a passable job, not bad!';
   } else if(score >= 70 && score < 90) {
@@ -77,7 +77,7 @@ Use the switch `default` option for the "not possible" option.
 The full `if ... else` block including added `switch` statement should look like this:
 
 ```
-if(machineActive) {
+if (machineActive) {
 	switch (true) {
 		case (score >= 0 && score < 20):
 		  response = 'That was a terrible score — total fail!';
@@ -117,7 +117,7 @@ let pwd = 'cheese';
 let machineResult;
 let pwdResult;
 
-if(machineActive) {
+if (machineActive) {
   machineResult = 'Machine is active. Trying login.'
   pwdResult = pwd === 'cheese' ? 'Login successful.' : 'Password incorrect; login failed.'
 } else {
